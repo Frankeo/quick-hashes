@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 
 namespace quick_hashes.code
 {
-    public interface IHash
-    {
-        ulong GetHash();
-    }
+public interface IHash
+{
+    ulong GetHash();
+}
 }

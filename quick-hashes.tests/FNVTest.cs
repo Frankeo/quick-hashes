@@ -3,18 +3,18 @@ using Xunit;
 
 namespace quick_hashes.tests
 {
-    public class FNVTest
+public class FNVTest
+{
+    [Fact]
+    public void ComputeSameHashSameWords()
     {
-        [Fact]
-        public void ComputeSameHashSameWords()
-        {
 
-        }
-
-        [Fact]
-        public void Compute2DifferentHashesDifferentWords()
-        {
-
-        }
     }
+
+    [Fact]
+    public void Compute2DifferentHashesDifferentWords()
+    {
+
+    }
+}
 }

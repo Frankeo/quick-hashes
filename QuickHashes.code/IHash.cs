@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace quick_hashes.code {
+namespace QuickHashes.code {
   public interface IHash {
     ulong GetHash();
   }

@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "quick-hashes.code", "quick-hashes.code\quick-hashes.code.csproj", "{68706140-69C2-4CB7-8D03-2D2FA64523AF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickHashes.code", "QuickHashes.code\QuickHashes.code.csproj", "{68706140-69C2-4CB7-8D03-2D2FA64523AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "quick-hashes.tests", "quick-hashes.tests\quick-hashes.tests.csproj", "{260B59EB-B38F-49E8-82E8-25264011B527}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickHashes.tests", "QuickHashes.tests\QuickHashes.tests.csproj", "{260B59EB-B38F-49E8-82E8-25264011B527}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

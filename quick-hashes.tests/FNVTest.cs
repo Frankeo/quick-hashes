@@ -1,20 +1,12 @@
 using System;
 using Xunit;
 
-namespace quick_hashes.tests
-{
-public class FNVTest
-{
+namespace quick_hashes.tests {
+  public class FNVTest {
     [Fact]
-    public void ComputeSameHashSameWords()
-    {
-
-    }
+    public void ComputeSameHashSameWords() {}
 
     [Fact]
-    public void Compute2DifferentHashesDifferentWords()
-    {
-
-    }
-}
+    public void Compute2DifferentHashesDifferentWords() {}
+  }
 }

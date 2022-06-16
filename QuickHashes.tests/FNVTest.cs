@@ -3,29 +3,20 @@ using Xunit;
 using QuickHashes.code;
 using System.Collections.Generic;
 
-namespace QuickHashes.tests
-{
-  public class FNVTest
-  {
+namespace QuickHashes.tests {
+  public class FNVTest {
 
     private readonly Random Random;
 
-    public FNVTest()
-    {
-      this.Random = new Random();
-    }
+    public FNVTest() { this.Random = new Random(); }
 
     public static IEnumerable<object[]> HashClasses =>
-      new List<object[]>
-      {
-          new object[] { new FNVAlternate() },
-          new object[] { new FNV() }
-      };
+        new List<object[]> { new object[] { new FNVAlternate() },
+                             new object[] { new FNV() } };
 
     [Theory]
     [MemberData(nameof(HashClasses))]
-    public void Compute_Same_Hash_Same_UInt(IFNV HashFunction)
-    {
+    public void Compute_Same_Hash_Same_UInt(IFNV HashFunction) {
       var randomUInt = this.Random.NextUInt();
       var hash1 = HashFunction.GetHash(randomUInt);
       var hash2 = HashFunction.GetHash(randomUInt);
@@ -35,8 +26,7 @@ namespace QuickHashes.tests
 
     [Theory]
     [MemberData(nameof(HashClasses))]
-    public void Compute_2_Different_Hashes_Different_UInt(IFNV HashFunction)
-    {
+    public void Compute_2_Different_Hashes_Different_UInt(IFNV HashFunction) {
       var hash1 = HashFunction.GetHash(this.Random.NextUInt());
       var hash2 = HashFunction.GetHash(this.Random.NextUInt());
 
@@ -45,8 +35,7 @@ namespace QuickHashes.tests
 
     [Theory]
     [MemberData(nameof(HashClasses))]
-    public void Compute_Same_Hash_Same_ULong(IFNV HashFunction)
-    {
+    public void Compute_Same_Hash_Same_ULong(IFNV HashFunction) {
       var randomULong = this.Random.NextULong();
       var hash1 = HashFunction.GetHash(randomULong);
       var hash2 = HashFunction.GetHash(randomULong);
@@ -56,8 +45,7 @@ namespace QuickHashes.tests
 
     [Theory]
     [MemberData(nameof(HashClasses))]
-    public void Compute_2_Different_Hashes_Different_ULong(IFNV HashFunction)
-    {
+    public void Compute_2_Different_Hashes_Different_ULong(IFNV HashFunction) {
       var hash1 = HashFunction.GetHash(this.Random.NextULong());
       var hash2 = HashFunction.GetHash(this.Random.NextULong());
 
@@ -66,8 +54,7 @@ namespace QuickHashes.tests
 
     [Theory]
     [MemberData(nameof(HashClasses))]
-    public void Compute_Same_Hash_Same_Long(IFNV HashFunction)
-    {
+    public void Compute_Same_Hash_Same_Long(IFNV HashFunction) {
       var randomLong = this.Random.NextLong();
       var hash1 = HashFunction.GetHash(randomLong);
       var hash2 = HashFunction.GetHash(randomLong);
@@ -77,8 +64,7 @@ namespace QuickHashes.tests
 
     [Theory]
     [MemberData(nameof(HashClasses))]
-    public void Compute_2_Different_Hashes_Different_Long(IFNV HashFunction)
-    {
+    public void Compute_2_Different_Hashes_Different_Long(IFNV HashFunction) {
       var hash1 = HashFunction.GetHash(this.Random.NextULong());
       var hash2 = HashFunction.GetHash(this.Random.NextULong());
 

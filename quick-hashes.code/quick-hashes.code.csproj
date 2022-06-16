@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>quick_hashes.code</RootNamespace>
+    <PackageId>quick-hashes</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Francisco Moreno</Authors>
+    <Company>Independent</Company>
+  </PropertyGroup>
+</Project>
